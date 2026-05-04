@@ -27,8 +27,9 @@ namespace Event_Booking___Ticket_Management.Controllers
         }
 
         [Authorize(Roles = "Admin")]
-        [HttpGet("GetAllBooking")]
-        public async Task<IActionResult> GetAllBookings(GetAllBookingQuery query)
+        [HttpGet]
+        [Route("bookings")]
+        public async Task<IActionResult> GetAllBookings([FromQuery] GetAllBookingQuery query)
         {
             var result = await _mediator.Send(query);
             return Ok(result);

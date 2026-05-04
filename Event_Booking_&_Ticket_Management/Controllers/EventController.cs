@@ -25,10 +25,10 @@ namespace Event_Booking___Ticket_Management.Controllers
             return Ok(result);
         }
 
-        [HttpGet("GetAll")]
-        public async Task<IActionResult> GetAllEvents()
+        [HttpGet]
+        public async Task<IActionResult> GetAllEvents([FromQuery] GetAllEventsQuery query)
         {
-            var result = await _mediator.Send(new GetAllEventsQuery());
+            var result = await _mediator.Send(query);
             return Ok(result);
         }
 
