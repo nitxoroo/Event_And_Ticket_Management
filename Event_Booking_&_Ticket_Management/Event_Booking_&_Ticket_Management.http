@@ -1,0 +1,6 @@
+@Event_Booking___Ticket_Management_HostAddress = http://localhost:5198
+
+GET {{Event_Booking___Ticket_Management_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/API/">
+    <Project Path="Event_Booking_&amp;_Ticket_Management/Event_Booking_&amp;_Ticket_Management.csproj" />
+  </Folder>
+  <Folder Name="/Application/">
+    <Project Path="Event_Booking_&amp;_Ticket_Management.Application/Event_Booking_&amp;_Ticket_Management.Application.csproj" />
+    <Project Path="Event_Booking_&amp;_Ticket_Management.Domain/Event_Booking_&amp;_Ticket_Management.Domain.csproj" />
+  </Folder>
+  <Folder Name="/Infrastructure/">
+    <Project Path="Event_Booking_&amp;_Ticket_Management.Infrastructure/Event_Booking_&amp;_Ticket_Management.Infrastructure.csproj" />
+  </Folder>
+</Solution>
